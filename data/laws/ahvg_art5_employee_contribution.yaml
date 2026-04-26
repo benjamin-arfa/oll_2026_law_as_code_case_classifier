@@ -1,0 +1,21 @@
+article_reference: "AHVG Art. 5"
+law_name: "AHV — Employee Contribution"
+legal_text: |
+  1 Vom Einkommen aus unselbständiger Erwerbstätigkeit, nachfolgend massgebender
+  Lohn genannt, wird ein Beitrag von 4,35 Prozent erhoben.
+  2 Als massgebender Lohn gilt jedes Entgelt für in unselbständiger Stellung auf
+  bestimmte oder unbestimmte Zeit geleistete Arbeit.
+openfisca_variable: "ahv_employee_contribution"
+input_parameters:
+  - name: "has_swiss_employment"
+    type: bool
+    description: "Whether the person is employed (unselbständig erwerbstätig)"
+  - name: "gross_monthly_salary"
+    type: float
+    description: "Gross monthly salary in CHF"
+keywords:
+  - employee
+  - contribution
+  - salary
+  - AHV
+  - employment

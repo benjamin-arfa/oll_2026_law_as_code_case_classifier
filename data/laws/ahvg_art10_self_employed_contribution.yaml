@@ -1,0 +1,20 @@
+article_reference: "AHVG Art. 10"
+law_name: "AHV — Self-Employed Contribution"
+legal_text: |
+  1 Vom Einkommen aus selbständiger Erwerbstätigkeit wird ein Beitrag von
+  8,1 Prozent erhoben.
+  2 Das Einkommen aus selbständiger Erwerbstätigkeit wird für die Berechnung
+  des Beitrages auf die nächsten 100 Franken abgerundet.
+openfisca_variable: "ahv_self_employed_contribution"
+input_parameters:
+  - name: "is_self_employed"
+    type: bool
+    description: "Whether the person is self-employed (selbständig erwerbstätig)"
+  - name: "self_employment_income"
+    type: float
+    description: "Annual self-employment income in CHF"
+keywords:
+  - self-employed
+  - contribution
+  - income
+  - AHV

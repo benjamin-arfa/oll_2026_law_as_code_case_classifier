@@ -1,0 +1,24 @@
+article_reference: "AHVG Art. 3"
+law_name: "AHV — Insurance Obligation"
+legal_text: |
+  1 Obligatorisch versichert sind natürliche Personen mit Wohnsitz in der Schweiz.
+  2 Obligatorisch versichert sind auch natürliche Personen, die in der Schweiz
+  eine Erwerbstätigkeit ausüben.
+  3 Die Versicherungspflicht beginnt am 1. Januar nach Vollendung des 17. Altersjahres.
+openfisca_variable: "ahv_insurance_obligation"
+input_parameters:
+  - name: "has_swiss_residence"
+    type: bool
+    description: "Whether the person has residence in Switzerland"
+  - name: "has_swiss_employment"
+    type: bool
+    description: "Whether the person is employed in Switzerland"
+  - name: "age"
+    type: int
+    description: "Age of the person (must be >= 18 for obligation)"
+keywords:
+  - insurance
+  - obligation
+  - residence
+  - employment
+  - AHV

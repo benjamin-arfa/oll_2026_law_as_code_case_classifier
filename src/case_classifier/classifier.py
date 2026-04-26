@@ -26,7 +26,15 @@ class CaseClassification(dspy.Signature):
     )
     input_parameters: str = dspy.OutputField(
         desc="JSON object mapping each applicable law to its input parameter values "
-             "extracted from the case, e.g. {'OR Art. 41': {'damage_caused': true, ...}}"
+             "extracted from the case. "
+             "CRITICAL RULES: "
+             "1) For enum parameters (shown with [value1/value2/...]), you MUST use one of the exact listed values verbatim. "
+             'Read the "= description" after each value to understand its meaning. '
+             "2) INFER values from context: if someone says 'university studies' without mentioning a prior degree, "
+             'use "erstausbildung" (first education), NOT "zweite_hochschulausbildung" (which means second university degree after already completing one). '
+             '3) If someone says "living in Bern", infer wohnsitz_grundlage="elterlicher_wohnsitz" (default student domicile in Bern). '
+             '4) If someone mentions "university"/"Hochschule", infer ausbildungsstufe="tertiaerstufe" and ausbildungsstaette_anerkannt=true. '
+             "5) Only use null for values truly impossible to determine from context."
     )
 
 

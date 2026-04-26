@@ -1,0 +1,28 @@
+article_reference: "OR Art. 20"
+law_name: "Code des Obligations — Contract Nullity"
+legal_text: |
+  1 Ein Vertrag, der einen unmöglichen oder widerrechtlichen Inhalt hat oder
+  gegen die guten Sitten verstösst, ist nichtig.
+  2 Betrifft aber der Mangel bloss einzelne Teile des Vertrages, so sind nur
+  diese nichtig, sobald nicht anzunehmen ist, dass er ohne den nichtigen Teil
+  überhaupt nicht geschlossen worden wäre.
+openfisca_variable: "or_contract_nullity"
+input_parameters:
+  - name: "has_impossible_object"
+    type: bool
+    description: "Whether the contract has an impossible object"
+  - name: "has_illicit_object"
+    type: bool
+    description: "Whether the contract has an illicit object or purpose"
+  - name: "has_immoral_object"
+    type: bool
+    description: "Whether the contract is contrary to public morals"
+  - name: "has_form_defect"
+    type: bool
+    description: "Whether the contract violates a mandatory form requirement"
+keywords:
+  - nullity
+  - void
+  - illegal
+  - immoral
+  - impossible

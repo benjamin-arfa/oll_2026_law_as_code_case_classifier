@@ -1,0 +1,32 @@
+article_reference: "OR Art. 1"
+law_name: "Code des Obligations — Contract Formation"
+legal_text: |
+  1 Zum Abschlusse eines Vertrages ist die übereinstimmende gegenseitige
+  Willensäusserung der Parteien erforderlich.
+  2 Sie kann eine ausdrückliche oder stillschweigende sein.
+openfisca_variable: "or_contract_formation"
+input_parameters:
+  - name: "has_offer"
+    type: bool
+    description: "Whether an offer (Antrag/offre) has been made"
+  - name: "has_acceptance"
+    type: bool
+    description: "Whether an acceptance (Annahme/acceptation) has been communicated"
+  - name: "has_concordance"
+    type: bool
+    description: "Whether offer and acceptance concord in meaning (principle of trust)"
+  - name: "has_reciprocity"
+    type: bool
+    description: "Whether the offer was addressed to the acceptor and vice versa"
+  - name: "has_required_form"
+    type: bool
+    description: "Whether the required form has been observed, or no form is required"
+  - name: "has_capacity"
+    type: bool
+    description: "Whether the parties have capacity to contract"
+keywords:
+  - contract
+  - formation
+  - offer
+  - acceptance
+  - agreement

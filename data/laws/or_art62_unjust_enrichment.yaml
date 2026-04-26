@@ -1,0 +1,27 @@
+article_reference: "OR Art. 62"
+law_name: "Code des Obligations — Unjust Enrichment"
+legal_text: |
+  1 Wer in ungerechtfertigter Weise aus dem Vermögen eines andern bereichert
+  worden ist, hat die Bereicherung zurückzuerstatten.
+  2 Insbesondere tritt diese Verbindlichkeit dann ein, wenn jemand ohne jeden
+  gültigen Grund oder aus einem nicht verwirklichten oder nachträglich
+  weggefallenen Grund eine Zuwendung erhalten hat.
+openfisca_variable: "or_unjust_enrichment"
+input_parameters:
+  - name: "has_enrichment"
+    type: bool
+    description: "Whether the defendant has been enriched"
+  - name: "has_impoverishment"
+    type: bool
+    description: "Whether the plaintiff has been impoverished"
+  - name: "has_connexity"
+    type: bool
+    description: "Whether the enrichment and impoverishment are connected"
+  - name: "has_no_legal_basis"
+    type: bool
+    description: "Whether the enrichment lacks a legal basis"
+keywords:
+  - unjust
+  - enrichment
+  - restitution
+  - without cause

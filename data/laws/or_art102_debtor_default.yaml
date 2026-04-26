@@ -1,0 +1,25 @@
+article_reference: "OR Art. 102"
+law_name: "Code des Obligations — Debtor Default"
+legal_text: |
+  1 Ist eine Verbindlichkeit fällig, so wird der Schuldner durch Mahnung des
+  Gläubigers in Verzug gesetzt.
+  2 Wurde für die Erfüllung ein bestimmter Verfalltag verabredet, oder ergibt
+  sich ein solcher infolge einer vorbehaltenen und gehörig vorgenommenen
+  Kündigung, so kommt der Schuldner schon mit Ablauf dieses Tages in Verzug.
+openfisca_variable: "or_debtor_in_default"
+input_parameters:
+  - name: "obligation_is_due"
+    type: bool
+    description: "Whether the contractual obligation is due and exigible"
+  - name: "debtor_has_been_summoned"
+    type: bool
+    description: "Whether the debtor has been put in default by interpellation or fixed term"
+  - name: "debtor_failed_to_perform"
+    type: bool
+    description: "Whether the debtor has failed to perform after being put in default"
+keywords:
+  - default
+  - delay
+  - debtor
+  - performance
+  - summons

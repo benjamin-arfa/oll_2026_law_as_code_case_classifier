@@ -1,0 +1,31 @@
+article_reference: "OR Art. 197"
+law_name: "Code des Obligations — Warranty Claim"
+legal_text: |
+  1 Der Verkäufer haftet dem Käufer sowohl für die zugesicherten Eigenschaften
+  als auch dafür, dass die Sache nicht körperliche oder rechtliche Mängel
+  habe, die ihren Wert oder ihre Tauglichkeit zu dem vorausgesetzten
+  Gebrauche aufheben oder erheblich mindern.
+  2 Er haftet auch dann, wenn er die Mängel nicht gekannt hat.
+openfisca_variable: "or_warranty_claim_valid"
+input_parameters:
+  - name: "has_sale_or_work_contract"
+    type: bool
+    description: "Whether a valid contract of sale or work exists"
+  - name: "has_defect"
+    type: bool
+    description: "Whether the thing delivered or work has a defect"
+  - name: "defect_before_risk_transfer"
+    type: bool
+    description: "Whether the defect existed before transfer of risk"
+  - name: "buyer_unaware_of_defect"
+    type: bool
+    description: "Whether the buyer was unaware of the defect at the time of contract"
+  - name: "timely_notice_of_defect"
+    type: bool
+    description: "Whether notice of defect was given in a timely manner"
+keywords:
+  - warranty
+  - defect
+  - sale
+  - guarantee
+  - notice

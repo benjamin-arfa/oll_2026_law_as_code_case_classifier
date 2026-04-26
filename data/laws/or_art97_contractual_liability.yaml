@@ -1,0 +1,30 @@
+article_reference: "OR Art. 97"
+law_name: "Code des Obligations — Contractual Liability"
+legal_text: |
+  1 Kann die Erfüllung der Verbindlichkeit überhaupt nicht oder nicht gehörig
+  bewirkt werden, so hat der Schuldner für den daraus entstehenden Schaden
+  Ersatz zu leisten, sofern er nicht beweist, dass ihm keinerlei Verschulden
+  zur Last falle.
+openfisca_variable: "or_contractual_liability"
+input_parameters:
+  - name: "has_contractual_obligation"
+    type: bool
+    description: "Whether a contractual obligation exists between the parties"
+  - name: "has_breach_of_obligation"
+    type: bool
+    description: "Whether the defendant has breached a contractual obligation"
+  - name: "has_contractual_damage"
+    type: bool
+    description: "Whether the plaintiff has suffered damage from the breach"
+  - name: "has_adequate_causation"
+    type: bool
+    description: "Whether there is an adequate causal link between breach and damage"
+  - name: "has_presumed_fault"
+    type: bool
+    description: "Whether fault is presumed (default true — reversed burden of proof)"
+keywords:
+  - contractual
+  - liability
+  - breach
+  - damages
+  - fault

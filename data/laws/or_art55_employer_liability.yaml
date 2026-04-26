@@ -1,0 +1,37 @@
+article_reference: "OR Art. 55"
+law_name: "Code des Obligations — Employer Liability"
+legal_text: |
+  1 Der Geschäftsherr haftet für den Schaden, den seine Arbeitnehmer oder
+  andere Hilfspersonen in Ausübung ihrer dienstlichen oder geschäftlichen
+  Verrichtungen verursacht haben, wenn er nicht nachweist, dass er alle nach
+  den Umständen gebotene Sorgfalt angewendet hat, um einen Schaden dieser
+  Art zu verhüten, oder dass der Schaden auch bei Anwendung dieser Sorgfalt
+  eingetreten wäre.
+  2 Der Geschäftsherr kann auf denjenigen, der den Schaden gestiftet hat,
+  insoweit Rückgriff nehmen, als dieser selbst schadenersatzpflichtig ist.
+openfisca_variable: "or_employer_liability"
+input_parameters:
+  - name: "is_employer_of_tortfeasor"
+    type: bool
+    description: "Whether the defendant is the employer of the person who committed the tort"
+  - name: "employee_committed_tort"
+    type: bool
+    description: "Whether the employee committed an unlawful act"
+  - name: "tort_in_course_of_employment"
+    type: bool
+    description: "Whether the tort was committed in the course of employment"
+  - name: "has_damage"
+    type: bool
+    description: "Whether the plaintiff suffered damage"
+  - name: "has_causation"
+    type: bool
+    description: "Whether there is an adequate causal link between the tort and damage"
+  - name: "employer_proves_diligence"
+    type: bool
+    description: "Whether the employer proves due diligence in selection, instruction, and supervision (exculpation)"
+keywords:
+  - employer
+  - liability
+  - vicarious
+  - employee
+  - diligence
